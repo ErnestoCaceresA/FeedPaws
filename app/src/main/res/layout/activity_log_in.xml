@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5FBED2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".5">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="15dp">
+
+            <EditText
+                android:id="@+id/UserET"
+                style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+                android:layout_width="325dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:hint="Usuario"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="300dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="15dp">
+
+            <EditText
+                android:id="@+id/PasswordET"
+                style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+                android:layout_width="325dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/LogInButton"
+            android:layout_width="275dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="400dp"
+            android:backgroundTint="#4BAF50"
+            android:text="Iniciar sesion"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="460dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/RegisterTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Aún no estas registrado? " />
+
+            <TextView
+                android:id="@+id/RHereTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrate aquí"
+                android:textColor="#4B67AF" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/logo2" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

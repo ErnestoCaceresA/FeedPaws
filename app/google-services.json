@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "257733212777",
+    "project_id": "app-dispmov",
+    "storage_bucket": "app-dispmov.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257733212777:android:42d421868d162b9a9580f8",
+        "android_client_info": {
+          "package_name": "com.codingstuff.loginandsignup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257733212777-5d0mv9atb6pqalp6qt858ksmr83hvgee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0Tw7N2QC9hkNAd8HWDstjvx7hhE2gv_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257733212777-5d0mv9atb6pqalp6qt858ksmr83hvgee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

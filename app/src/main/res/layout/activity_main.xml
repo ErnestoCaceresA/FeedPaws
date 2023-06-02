@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5FBED2"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/BackMain"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/vuelta" />
+
+            <ImageView
+                android:id="@+id/TrashMain"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/trash" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/UserNameTV"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="UserName"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:id="@+id/PetsLL"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"></LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/AddPetButton"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#328A36"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:foregroundTint="#FFFFFF"
+            android:gravity="center|center_vertical"
+            android:text="+"
+            android:textSize="30sp"
+            app:cornerRadius="100dp" />
+
+        <Button
+            android:id="@+id/SAHistMainButton"
+            android:layout_width="275dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#4BAF50"
+            android:text="Historial" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
